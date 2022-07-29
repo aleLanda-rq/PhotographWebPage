@@ -1,7 +1,9 @@
 .footer{
-    position:static;
+   position:static;
+    bottom: 0;
     background-color: black;
-   padding:20px 0;
+   width: 100%;
    color: #fff;
    text-align: center;
+   height: 3.5rem;
 }
