@@ -124,24 +124,24 @@ transform:scale(1);
 
 } */
   .load_button{
+    position: relative;
     font-size: 19px;
     letter-spacing: 5px;
-    justify-content: center;
     content: "LOAD MORE";
     height: 55px;
     width: 180px;
-    align-items: center;
-    justify-content: center;
     border: 3px solid black;
     box-sizing: border-box;
     border-radius: 5px;
-    right: 10em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    left: 35rem;
+    
     
   }
   .load_button:hover{
-    background-color: rgba(245, 54, 140, 0.779);
+    background-color: black;
     color:white;
-    border: 3px solid rgb(34, 55, 188);
   }
  
 
