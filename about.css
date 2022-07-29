@@ -1,0 +1,28 @@
+#imagen{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+   transition: .2s linear;
+   height:550px;
+    width:400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    }
+
+    @media screen and (max-width: 480px) {
+        .about_p {
+          font-size: 30px;
+        }
+      }
+      
+      .about_p{
+        width: 70%;
+        left: 50rem;
+      }
+     
+      
