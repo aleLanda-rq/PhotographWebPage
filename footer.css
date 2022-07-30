@@ -1,9 +1,45 @@
 .footer{
-   position:static;
+   position:relative;
+   margin-top: 3%;
+ text-align: center;
     bottom: 0;
-    background-color: black;
    width: 100%;
    color: #fff;
-   text-align: center;
-   height: 3.5rem;
+ 
+  
+}
+
+#photography{
+
+   font-size: 30px;
+ 
+   
+}
+.footer_container{
+
+   background-color: black;
+   height: 3.7rem;
+}
+.footer_credits{
+   float: left;
+   margin-left: 70px;
+
+  
+}
+#github{
+float: right;
+margin-right: 10px;
+
+}
+#linkedin{
+   float: right;
+   margin-right: 20px;
+   margin-left: 10px;
+}
+@media screen and (max-width: 650px) {
+   .footer_container{
+   width: 105%;
+  margin-top: 100px
+
+   }
 }
