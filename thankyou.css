@@ -1,0 +1,13 @@
+#thankyou_image{
+    max-width: 100%;
+    height: 100%;
+    width: 500px;
+margin-left: 25em;
+
+}
+
+@media screen and (max-width: 600px) {
+    #thankyou_image{
+
+    }
+}
