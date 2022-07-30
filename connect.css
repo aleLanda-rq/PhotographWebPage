@@ -1,0 +1,99 @@
+
+.container_form{
+ left: 300px;
+}
+
+
+
+.credit{
+    color:black;
+   bottom: 0%;
+ 
+}
+
+.headers{
+    color: rgb(129, 124, 124);
+    margin-top:1%;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: rgba(221, 221, 221, 0.248);
+    font-size: large;
+    margin-top: 1%;
+   
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+ 
+  .container_form{
+  
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    width: 50%;
+   margin-left: 2rem;
+   justify-content: center;
+ 
+  }
+
+  #send_button{
+    letter-spacing: 2.5px;
+    max-width: 100%;
+    background-color: #fff;
+    color:black;
+    border-radius: 5%;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+   margin-top: 10px;
+   padding: 10px 25px 10px 25px;
+   float: right;
+  border: 2px solid black;
+  
+
+
+
+  }
+  #send_button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+  
+  }
+ 
+  #email, #subject, #fname{
+    font-size: large;
+  }
+  #Lets_talk{
+ 
+    letter-spacing: .5rem;
+ 
+    padding-top: 2%;
+  }
+  @media screen and (max-width: 600px) {
+    #Lets_talk,.container_form,.headers,input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      right: 20px;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+   .container_form {
+     
+    left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #Lets_talk{
+       font-size: 50px;
+
+    }
+  }
