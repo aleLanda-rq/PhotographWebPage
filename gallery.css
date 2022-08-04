@@ -1,21 +1,23 @@
-.gallery{
-    position: relative;
-    top:0;
-}
-@media (max-width: 480px) {
-    h1,h2 { font-size: 4em; }
-  }
+
+/* header area */
 h1,h2{
-    margin-top: 3%;
+    margin:0;
+     padding-top: 3%;
     text-align: center;
+    letter-spacing: 1rem;
     /* font-size: 200%; */
 }
 h3{
+    position: relative;
+    margin:0;
     margin-top: 1%;
     text-align: center;
 }
-@media (max-width: 480px) {
-    p { font-size: 1.6em; }
+@media (max-width: 768px) {
+    h1,h2 { font-size: 3em; }
+  }
+  @media (max-width: 768px) {
+   h3 { font-size: 2em; }
   }
 p{
    margin-top: 1%;
@@ -25,18 +27,26 @@ p{
     padding-left: 4rem;
 
 }
+@media (max-width: 768px) {
+    p { font-size: 1em; }
+  }
+  /* header area end*/
 .contact-btn{
     color:black;
 }
 
+
+/* image editing begins */
 .image{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
 .image:hover{
     filter: none;
+    transition: 0.2s;
     -webkit-filter: grayscale(0);
 }
+
 
 .container .image_container{
     display:flex;
@@ -44,8 +54,6 @@ p{
    justify-content:center ;
    gap:15px;
    padding:10px;
-
-
 }
 
 .container .image_container .image{
@@ -62,9 +70,6 @@ p{
     object-fit: cover;
    transition: .2s linear;
 }
-
-
-
 .container .pop_up_image{
     position:fixed;
     top:0;
@@ -103,50 +108,37 @@ p{
 
     }
 }
+/* image editing begins */
 
 
-  .load_button{
-    position: relative;
+/* button area  */
+
+  #load_button{
     font-size: 19px;
     letter-spacing: 5px;
     content: "LOAD MORE";
     height: 55px;
-    width: 180px;
+   min-width: 50px;
+   max-width: 180px;
     border: 3px solid black;
     box-sizing: border-box;
     border-radius: 5px;
     margin-top: 2%;
     margin-bottom: 2%;
-    left: 35rem;
-    
-    
+    margin: auto;
+   display: block;
+    width: 100%;
   }
-  .load_button:hover{
+
+
+  #load_button:hover{
     background-color: black;
     color:white;
+    cursor: pointer;
   }
  
 
    
-/* test */
-  
-  
-  .items .item{
-    background:#f3f3f3;
-    padding: 20px;
-    border-radius: 10px;
-    border:solid 1px #aaa;
-    display:inline-block;
-    width: 31%;
-    margin:1%;
-}
 
-.items .item .item-title{
-    font-size: 20pt;
-    font-weight:bold;
-    letter-spacing: -1px;
-}
+  
 
-.items .item .item-image{
-    width: 100%;
-}
