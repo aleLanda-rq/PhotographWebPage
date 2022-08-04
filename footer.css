@@ -10,12 +10,6 @@
   
 }
 
-#photography{
-
-   font-size: 30px;
- 
-   
-}
 .footer_container{
 
    background-color: black;
@@ -23,7 +17,7 @@
 }
 .footer_credits{
    float: left;
-   margin-left: 70px;
+   margin-left: 4em;
 
   
 }
@@ -42,8 +36,32 @@ margin-right: 10px;
 @media screen and (max-width: 650px) {
    .footer_container{
    width: 100%;
-  margin-top: 10px
+  margin-top: 10px;
+  
 
    }
+   .footer_credits{
+      transition: 0.5s;
+      margin-left: 15px;
+ 
+ 
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 445px) {
+   .footer_container{
+     padding-bottom: 5em;
+
+   }
+   .footer_credits{
+     margin-left: 10px;
+
+
+   }
+
 }
 
