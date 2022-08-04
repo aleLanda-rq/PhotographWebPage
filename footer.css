@@ -1,4 +1,5 @@
 .footer{
+   
    position:relative;
    margin-top: 3%;
  text-align: center;
@@ -36,10 +37,13 @@ margin-right: 10px;
    margin-right: 20px;
    margin-left: 10px;
 }
+
+
 @media screen and (max-width: 650px) {
    .footer_container{
-   width: 105%;
-  margin-top: 100px
+   width: 100%;
+  margin-top: 10px
 
    }
 }
+
