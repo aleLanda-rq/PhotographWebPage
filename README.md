@@ -7,7 +7,7 @@
 
 https://alelanda-rq.github.io/PhotographWebPage/index.html
 
-![image](https://user-images.githubusercontent.com/98127121/182914626-f9a64ba2-65e1-49e6-b91c-f8c33f15a402.png)
+![image](https://user-images.githubusercontent.com/98127121/182915567-914a8f61-ffb1-4a97-8801-99bff55fb5a1.png)
 ![image](https://user-images.githubusercontent.com/98127121/182914696-f75b3ac6-ae4e-4497-8da3-4f3a1b83b983.png)
 ![image](https://user-images.githubusercontent.com/98127121/182914748-76b7a820-e0cd-4567-84b1-de049409947f.png)
 
