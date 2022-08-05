@@ -2,10 +2,16 @@
 /* header area */
 h1,h2{
     margin:0;
-     padding-top: 3%;
     text-align: center;
+   
+    
+}
+h1{
     letter-spacing: 1rem;
-    /* font-size: 200%; */
+    margin-top: 3%;
+}
+h2{
+    margin-top: 2%;
 }
 h3{
     position: relative;
@@ -19,16 +25,20 @@ h3{
   @media (max-width: 768px) {
    h3 { font-size: 2em; }
   }
-p{
+.gallery_description{
    margin-top: 1%;
     text-align: center;
-    margin-bottom: 5%;
-    width: 92%;
-    padding-left: 4rem;
+    margin-bottom: 3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 @media (max-width: 768px) {
-    p { font-size: 1em; }
+    .gallery_description{ 
+        font-size: 1em; 
+        width: 100%;
+    }
   }
   /* header area end*/
 .contact-btn{
@@ -138,6 +148,7 @@ p{
   }
  
 
+   
    
 
   
