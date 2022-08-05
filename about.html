@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./gallery.css">
     <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./credits.css">
     <link rel="stylesheet" href="./footer.css">
+    <script defer src="./index.js"></script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Bebas Neue">
   
@@ -22,23 +24,43 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="credit.html">Credits</a></li>
             <li><a href="connect.html">Connect</a></li>
         </ul>
+        </nav>
     </div>
     </div>
-   <h1>About</h1>
-   <div class="about_content">
-  <img id="imagen"src="./about.jpg" alt="smiling woman">
-
+    <header>
+        <nav class="mobile-nav">
+            <button class="nav-mobile-btn"><img class='btnimg'src="menu-4-32.png" alt="hamburger icon"></i></button>
+            <button class="nav-mobile-btn"><img class='btnclose'src="x-mark-32.png" alt="close icon"></i></button>
+                 <ul class="mobile-nav-links">
+                     <li><a href="index.html" class="mobile">Home</a></li>
+                     <li><a href="gallery.html" class="mobile">Gallery</a></li>
+                     <li><a href="about.html" class="mobile">About</a></li>
+                     <li><a href="credit.html" class="mobile">Credits</a></li>
+                     <li><a href="connect.html" class="mobile">Connect</a></li>
+                 </ul>
+             </nav>
+        <h1>About</h1>
+    </header>
+    <section id="about_container">
+   <img id="imagen"src="./smiling-girl.png" alt="smiling girl">
+  <div class="about_content">
 <p id="about_p">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex nulla consequatur! Quos neque a optio voluptatibus, sunt assumenda consequatur dolor natus iure pariatur vel error aliquam, ratione in distinctio!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor vel veniam, pariatur ratione veritatis beatae atque deleniti expedita assumenda eligendi, vero quisquam aliquid magnam voluptate a natus officia odio?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor autem atque ipsa similique pariatur repellendus dicta quisquam repellat velit suscipit consectetur repudiandae minus voluptatum mollitia saepe, placeat tempora impedit?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id commodi rem. Necessitatibus minus sunt excepturi maiores minima explicabo quas commodi. Eveniet quos laboriosam, magni voluptatem beatae earum possimus perferendis.
-</p>
-
+ Hi my name is alejandra! Thank you for taking your time to look through my project. The main purposes
+ of this project was not only to add it to my portfolio, but practice my Javascript, CSS, and HTML skills. I also
+ wanted to practice web responsivesness, and some css animations. I started learning how to program this year(2022), and wanted 
+ to feel comfortable creating projects on my own without following a step by step guide. However, that does not mean
+ I did not get help from google or youtube tutorials to do stuff here and there. I hope you enjoyed it! 
+ Please let me know your thoughts in the connect with me page. If you find any bugs, do not tell me, I already
+ have enough gray hairs. Just kidding! please tell me in the email form on the connect page.I look forward to hearing from you!
+    </p>
+    <center><a class="about_credit" href="https://iconscout.com/illustrations/smiling-girl" target="_blank">Smiling girl Illustration</a> by <a class="about_credit"href="https://iconscout.com/contributors/iconscout">IconScout Store</a> on <a class='about_credit'href="https://iconscout.com">IconScout</a></center>
 </div>
-<div class="footer">
+</section>
+
+<section class="footer">
     <div class="footer_container">
        
  <br>
@@ -48,6 +70,7 @@
    <a class="footer_credits" hred="index.html">Home</a>
     <a class="footer_credits"href="gallery.html">Gallery</a>
     <a class="footer_credits"href="about.html">About</a>
+    <a class="footer_credits" href="credit.html">Credits</a>
     <a class="footer_credits"href="connect.html">Connect</a>
 
 <!-- <a href="https://iconscout.com/icons/linkedin" target="_blank">LinkedIn Logo Icon</a> by <a href="https://iconscout.com/contributors/ma-lourdes-suello" target="_blank">Ma. Lourdes Suello</a> -->
@@ -56,6 +79,9 @@
 </div>
 </div>
      
+
+   
+</section>
+   
 </body>
-<script src="./index.js"></script>
 </html>
