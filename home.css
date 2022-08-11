@@ -1,3 +1,22 @@
+*{
+    margin:0;
+    border:0;
+    outline:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family:Bebas Neue;
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+body{
+    background-color:#EFEFEF;
+    height:100vh;
+}
+
+
 .credit{
     color:rgba(254, 255, 250, 0.933);
     position: absolute;
