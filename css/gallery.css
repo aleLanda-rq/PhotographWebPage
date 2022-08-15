@@ -1,0 +1,162 @@
+
+/* header area */
+h1,h2,h3{
+    margin:0;
+    text-align: center;
+  
+    
+}
+h1{
+    letter-spacing: 1rem;
+    margin-top: 3%;
+    font-size: 2em;
+}
+h2{
+    margin-top: 2%;
+}
+h3{
+    position: relative;
+    margin:0;
+    margin-top: 1%;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 768px) {
+    h1,h2 { font-size: 150%; }
+  }
+  @media (max-width: 768px) {
+   h3 { font-size: 100%; }
+  }
+.gallery_description{
+   margin-top: 1%;
+    text-align: center;
+    margin-bottom: 3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media (max-width: 768px) {
+    .gallery_description{ 
+        font-size: 1em; 
+        width: 100%;
+    }
+  }
+  /* header area end*/
+.contact-btn{
+    color:black;
+}
+
+
+/* image editing begins */
+.gallery-image{
+    display: flex;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.gallery-image:hover{
+    filter: none;
+    transition: 0.2s;
+    -webkit-filter: grayscale(0);
+}
+
+
+.container-images .image_container{
+    display:flex;
+    flex-wrap: wrap;
+   justify-content:center ;
+   gap:15px;
+   padding:10px;
+}
+.image_container{
+    display: flex;
+}
+
+.container-images .image_container .gallery-image{
+    height:550px;
+    width:400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.container-images .image_container .gallery-image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+   transition: .2s linear;
+}
+.container-images .pop_up_image{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.9);
+   height: 100%;
+   width: 100%;
+    z-index: 100;
+    display: none;
+ 
+}
+
+.container-images .pop_up_image span{
+    position: absolute;
+    top:0;
+    right:10px;
+    font-size:60px;
+    color:#fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container-images .pop_up_image img{
+ position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   width:600px;
+   object-fit: cover;
+
+}
+
+@media(max-width:768px){
+    .container-images .pop_up_image img{
+     width:95%;
+
+
+    }
+}
+/* image editing begins */
+
+
+/* button area  */
+
+  #load_button{
+
+    font-size: 19px;
+    letter-spacing: 5px;
+    content: "LOAD MORE";
+    height: 55px;
+   min-width: 50px;
+   max-width: 180px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin: auto;
+   display: block;
+    width: 100%;
+  }
+
+
+  #load_button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+  }
+ 
+
+   
+
+  
