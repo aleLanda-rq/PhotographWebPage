@@ -5,7 +5,7 @@
  
  This a project I created using HTML, CSS, and Javascript. It it is a "Photography" portfolio that uses images from unsplash.com. The reason I created this project was to practice my skills, and work on web responsivess. I also created my own API, and used it to load more images once you click on the load more button in the gallery.
 
-https://alelanda-rq.github.io/PhotographWebPage/index.html
+
 
 ![image](https://user-images.githubusercontent.com/98127121/182915567-914a8f61-ffb1-4a97-8801-99bff55fb5a1.png)
 ![image](https://user-images.githubusercontent.com/98127121/182914696-f75b3ac6-ae4e-4497-8da3-4f3a1b83b983.png)
