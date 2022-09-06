@@ -3,7 +3,7 @@
 const imageContainer = document.querySelector('.image_container');
 
 
-const url ='https://api.unsplash.com/photos/random/?client_id=xlVjUwwagGetLaTPXbgcHFqUO9d_rWuT89gQpPrVmvY'
+const url ='https://api.unsplash.com/photos/random/?client_id=API_KEY'
 
 const query = '&query=cyberpunk&count=3'
 const loadbttn = document.querySelector('#load_button');
