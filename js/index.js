@@ -1,25 +1,52 @@
-window.addEventListener('scroll', function()  {
-    var nav=document.querySelector('nav')
-nav.classList.toggle('sticky', window.scrollY> 0);
+// window.addEventListener('scroll', function()  {
+//     var nav=document.querySelector('nav')
+// nav.classList.toggle('sticky', window.scrollY> 0);
+// })
+
+
+const body= document.body;
+let lastScroll= 0;
+
+window.addEventListener('scroll', () =>{
+   const currentScroll = window.scrollY ;
+   if(currentScroll <=0){
+    body.classList.remove('scroll-up')
+   }
+    if(currentScroll > lastScroll && !document.querySelector('.scroll-down')) {
+        body.classList.remove('scroll-up')
+        body.classList.add('scroll-down')
+    }
+    if(currentScroll < lastScroll && document.querySelector('.scroll-down')) {
+        body.classList.remove('scroll-down')
+        body.classList.add('scroll-up')
+    }
+   lastScroll = currentScroll;
 })
 
+// -------------------------------------------------
 
 
-document.querySelectorAll('.image_container img').forEach((image)=>{
+
+// -------------------------------------------------
+
+function imagePopUps(){
+document.querySelectorAll('.gallery-image img').forEach((image)=>{
     image.addEventListener('click', ()=>{
         document.querySelector('.pop_up_image').style.display ='block';
         document.querySelector('.pop_up_image img').src=image.getAttribute('src')
-        document.querySelector('.sticky').style.display='none';
+        document.querySelector('header').style.display='none';
     })
 })
 const popImage = document.querySelector('.pop_up_image span');
 if(popImage){
 popImage.addEventListener('click', () =>{
     document.querySelector('.pop_up_image').style.display ='none';
-        document.querySelector(".sticky").style.display='inline';
+        document.querySelector("header").style.display='block';
 })
 }
+}
 
+imagePopUps();
 
 const mobileNav=document.querySelector('.mobile-nav-links');
 const navBttn=document.querySelector('.btnimg');
@@ -43,48 +70,5 @@ closebttn.addEventListener('click', ()=>{
     closebttn.style.display='none';
 })
 
-// navBttn.onclick(() =>{
-//     console.log('clicked')
-// mobileNav.style.display='block';
-// mobileNav.style.display='none';
-
-// })
 
 
-
-
-
-//  const navigationLinks = document.querySelector('.nav_Links');
-//  const hamburger = document.querySelector('.buttons');
-
-//  hamburger.addEventListener('click', () =>{
-//   hamburger.classList.toggle("active");
-//   navigationLinks.classList.toggle("active");
-//  })
-
-// document.querySelector('.').forEach(n => n.addEventListener('click', () => {
-//     hamburger.classList.toggle("active");
-//     navigationLinks.classList.toggle("active");
-// }))
-
-
-
-
-// const url="http://localhost:3000"
-
-// fetch(`${url}/images/1`)
-// .then((res)=>res.json())
-// .then((data)=> loadData(data))
-
-
-
-
-
-// function loadData(image){
-// // images.forEach((image)=> {
-// let div= document.querySelector('.image_container')
-//  let picture= document.createElement('img')
-//   picture.src=image.image;
-//   div.appendChild(picture)
-// }
-// // )}

@@ -13,20 +13,28 @@ html{
 }
 body{
     background-color:#EFEFEF;
-    height:100vh;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-
+a:hover{
+    color:#e78ea0;
+}
 
 .credit{
     color:rgba(254, 255, 250, 0.933);
     position: absolute;
-    bottom: -50px;
-    left: -32rem;
-  
-
-
+    bottom:0;
+    margin:2%;
 }
+ 
 
+.siteName{
+    bottom:0;
+}
+a{
+    color:white;
+}
 section.coverPhoto{
    width: 100%;
     height: 100%;
@@ -34,12 +42,60 @@ section.coverPhoto{
     overflow: hidden;
     height:100vh;
     background: url(../image/cover2.jpg);
+    background-color: black;
     background-size: cover;
     position: relative;
     }
 
 
-@media (max-width:768px){
+/* .wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 5rem;
+  
+}
+.wrapper .dynamic-txt{
+    overflow: hidden;
+   
+}
+.wrapper li{
+    color: white;
+
+}
+
+.dynamic-txt li span{
+    position: relative;
+
+}
+
+
+.dynamic-txt li span::after{
+content:"";
+position: absolute;
+left:0;
+height: 100%;
+width: 100%;
+border-left: 3px solid black;
+animation: typing 3.5s steps(23) ;
+background: url(../image/cover2.jpg)
+}
+
+@keyframes typing{
+    100%{
+        left:100%;
+        margin:0 -35px 0 -35px;
+    }
+}
+ */
+
+ .hometitle{
+    position: relative;
+   top:2%;
+    color:white;
+ }
+@media (max-width:992px){
     #home{
          font-size: 4em; 
         
@@ -47,7 +103,7 @@ section.coverPhoto{
 }
 
 
-@media (max-width:768px){
+@media (max-width:992px){
     .credit{
          font-size: 1.0em; 
          position: absolute;

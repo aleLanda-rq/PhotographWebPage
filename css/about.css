@@ -1,17 +1,23 @@
 
        .about-wrapper{
-        height: 100vh;
+        /* height: 100vh; */
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+       
     }
     .about-left{
-        background: #f26a8d;
+        /* background: #f26a8d; */
+        background-color: #df97a9c4;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 105vh;
+        grid-area: 'left-content';
     }
     .about-left-content > div{
-        background: #f49cbb;
+        /* background: #f49cbb; */
+        background-color: #e78ea0;
         padding: 4rem 4rem 2.5rem 5rem;
         text-align: center;
     }
@@ -97,6 +103,7 @@
         color: #000;
     }
     .about-right{
+        position: relative;
         background: #efefef;
         height: 105vh;
         display: flex;
@@ -105,6 +112,7 @@
         justify-content: center;
         padding: 0 5rem;
         text-align: center;
+        grid-area: 'right-content';
     }
     .about-right h1{
         font-size: 7rem;
@@ -158,17 +166,19 @@
         opacity: 0.8;
     }
     
-    @media screen and (min-width: 992px){
+ @media (max-width: 992px){
         .about-wrapper{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:1fr ;
+            grid-template-areas: auto;
+           
+            
         }
         .about-left{
             position: relative;
         }
         .about-left-content{
             position: absolute;
-            right: -50px;
+      
         }
-    }
+    } 
     

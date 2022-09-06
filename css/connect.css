@@ -1,16 +1,20 @@
 
 .form{
-  width: 50vw; 
-  margin-left : 22vw;
+  width: 50%; 
+margin:0 auto;
+
+
 }
 
 #Lets_talk{
   color:#fff;
+  margin-bottom: 3%;
 }
 
 .headers{
     color: #fff;
     margin-top:1%;
+    transform: 0.3s;
 }
 /* input[type=text] */
 #email,#fname{
@@ -51,18 +55,7 @@
     display: inline-block;
   }
  
-  .container_form{
-  
-    position: relative;
-    top: 0;
-    border-radius: 5px;
-    /* background-color: #fff; */
-    padding: 20px;
-    width: 50%;
-   margin-left: 2rem;
-   justify-content: center;
- 
-  }
+
 
   #send_button{
     letter-spacing: 2.5px;
@@ -74,6 +67,7 @@
    margin-top: 10px;
    padding: 10px 25px 10px 25px;
    float: right;
+
   /* border: 2px solid black; */
   
 

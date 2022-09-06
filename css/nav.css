@@ -1,41 +1,32 @@
-*{
-    margin:0;
-    border:0;
-    outline:0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-    font-family:Bebas Neue;
+
+
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+    transition: 0.2s ease-in;
 }
-html{
-    scroll-behavior: smooth;
-   
+.scroll-up header{
+    filter:drop-shadow(0 -10px -20px rgb(68, 67, 67))
 }
-body{
-    background-color:#fff;
-     /* height: 100vh; */
- 
-}
-nav.desktop-nav, nav.sticky{
+nav.desktop-nav{
     position: fixed;
     top:0;
     left:0;
-    /* padding:30px 100px; */
+    padding:15px; 
     width: 100%;
     transition:0.6s;
   z-index: 100000;
+  box-shadow: 0 0 12px 0 rgba(3, 3, 3, 0.538);
+    padding:15px;
+    background-color: #efefef8f;
+  /* border-bottom: 20px rgba(73, 40, 40, 0.782); */
+  display: flex;
+  flex-direction: row;
+  
   
 }
-nav ul li {
-    position: relative;;
+.logo{
+    width: 35px;
 }
-nav ul li a{
-    position: relative;
-    line-height: 45px;
- transition:0.6s;
- 
-}
-
 nav.mobile-nav{
     background:rgba(0,0,0,0.5);
     width: 100%;
@@ -45,12 +36,10 @@ nav.mobile-nav{
     position: relative;
 
 }
-nav.sticky{
-   background-color: rgba(0,0,0,0.5);
-  padding: 25px 100px;
- 
-}
 
+.mobile-nav a {
+    color:white;
+}
 
 
 #home{
@@ -61,24 +50,25 @@ nav.sticky{
 
 
 .nav_Links{
-    position: fixed;
-    left:700px;
-    top: .5em;
-    width: 100%;
+    position: absolute;
+    float: right;
+    right:10px;
     gap:3rem;
-    list-style-type: disc;
-    display:flex;
+    display:inline-flex;
     flex-direction: row;
-    font-size: x-large;
- 
-
- 
+    font-size:22px;
+    
 }
- a{
-    color: #efefef;
- }
+
+.nav_Links a{
+    color: black;
+
+}
+ /* a{
+    color: white;
+ } */
 a:hover{
-    color:rgba(245, 54, 140, 0.779);
+    color:#e78ea0;
 }
 
 
@@ -87,9 +77,9 @@ a:hover{
 
 /* nav responsivesnesss  */
 
-@media(max-width:1215px) {
-    .desktop-nav{
-        display: none;
+@media screen and(max-width:990px) {
+   header .nav_container,header .desktop-nav{
+  display: none !important;
         
     }
 
@@ -126,7 +116,7 @@ a:hover{
   position: sticky;
   width: 110%;
   top:0;
-  z-index:10;
+  z-index:1000;
   overflow:hidden;
   padding-top: 2%;
   padding-bottom: 1%;
@@ -134,7 +124,7 @@ a:hover{
 }
 
 
-@media(min-width:1215px){
+@media screen and (min-width:990px){
     .mobile-nav{
         display: none;
         

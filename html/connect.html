@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/connect.css">
-    <!-- <link rel="stylesheet" href="./home.css"> -->
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/background.css">
     <script defer src="../js/index.js"></script>
     <link rel="stylesheet"
@@ -20,37 +20,46 @@
 </head>
 
 <body>
-    <div class="d-flex flex-column justify-content-center w-100 h-100">
-
-        <div class="d-flex flex-column justify-content-center align-items-center">
-        </div>
-    </div>
-    </div>
+  
     <!--begin nav bar-->
     
-    <div class="top">
-        <div class="nav_container">
+    <header class="nav_container">
           
-            <nav class="desktop-nav">
+        <nav class="desktop-nav">
+<a href="./index.html" class="bar"><img class='logo' src="../image/cameraLogo.png" alt="camera"></img></a>
+    <ul class="nav_Links">
+        <li><a href="./index.html" class="bar">Home</a></li>
+        <li><a href="./gallery.html" class="bar">Gallery</a></li>
+        <li><a href="./about.html" class="bar">About</a></li>
+        <li><a href="./connect.html" class="bar">Connect</a></li>
+    </ul>
+</nav>
 
-        <ul class="nav_Links">
-            <li><a href="./index.html" class="bar">Home</a></li>
-            <li><a href="./gallery.html" class="bar">Gallery</a></li>
-            <li><a href="./about.html" class="bar">About</a></li>
-            <li><a href="./credit.html">Credits</a></li>
-            <li><a href="./connect.html" class="bar">Connect</a></li>
-        </ul>
-    </nav>
-        
-    </div>
-    </div>
-<!--end nav bar-->
+
+
+</header>
+<!-- end desktop nav -->
+    <header>
+        <nav class="mobile-nav">
+           
+               <button class="nav-mobile-btn"><img class='btnimg'src="../image/menu-4-32.png" alt="hamburger icon"></i></button>
+               <button class="nav-mobile-btn"><img class='btnclose'src="../image/x-mark-32.png" alt="close icon"></i></button>
+                    <ul class="mobile-nav-links">
+                        <li><a href="./index.html" class="mobile">Home</a></li>
+                        <li><a href="./gallery.html" class="mobile">Gallery</a></li>
+                        <li><a href="./about.html" class="mobile">About</a></li>
+                        <!-- <li><a href="./credit.html" class="mobile">Credits</a></li> -->
+                        <li><a href="./connect.html" class="mobile">Connect</a></li>
+                    </ul>
+                </nav>
+               </header>
+<!--end mobile nav bar-->
 
   <!--begin form-->
  
     <h1 id="Lets_talk">Let's talk</h1>
-    <br>
- <div class="container_form">
+
+
 <form class="form" action="https://formsubmit.co/aleriquene@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="New submission! WOOHOO!">
     <h4 class="headers">Your Name</h4>
@@ -60,12 +69,10 @@
     <input type="text" id="email"name="email" required>
     <h4 class="headers">Your Message</h4>
     <textarea required></textarea>
-    <!-- <input type="text" id="subject"name="message"  required> -->
     <button id="send_button"type="submit">Submit → </button>
     
 </form>
-</div>
-<br>
+
 <br>
 <br>
 <br>
@@ -83,12 +90,8 @@
    <a class="footer_credits" href="./index.html">Home</a>
     <a class="footer_credits"href="./gallery.html">Gallery</a>
     <a class="footer_credits"href="./about.html">About</a>
-    <a class="footer_credits" href="./credit.html">Credits</a>
     <a class="footer_credits"href="./connect.html">Connect</a>
 
-<!-- <a href="https://iconscout.com/icons/linkedin" target="_blank">LinkedIn Logo Icon</a> by <a href="https://iconscout.com/contributors/ma-lourdes-suello" target="_blank">Ma. Lourdes Suello</a> -->
-<!-- <a href="https://iconscout.com/icons/social" target="_blank">Github Logo Icon</a> by <a href="https://iconscout.com/contributors/pocike" target="_blank">Those Icons</a> -->
-<!-- <a href="https://iconscout.com/icons/github" target="_blank">Github Logo Icon</a> by <a href="https://iconscout.com/contributors/roundicons-com" target="_blank">Roundicons.com</a> -->
 </div>
 </div>
      
