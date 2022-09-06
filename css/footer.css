@@ -1,11 +1,11 @@
 .footer{
+   /* position: fixed; */
    bottom: 0;
    margin-top: 3%;
  text-align: center;
-    
    width: 100%;
    color: #fff;
- 
+
   
 }
 
@@ -13,11 +13,12 @@
 
    background-color: black;
    height: 3.7rem;
+
 }
 .footer_credits{
    float: left;
    margin-left: 4em;
-
+color:white;
   
 }
 #github{

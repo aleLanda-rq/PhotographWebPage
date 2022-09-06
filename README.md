@@ -1,5 +1,13 @@
+
+# PhotographWebPage
+
+
+to open do "open ./html/index.html"
+
+json-server --watch db.json
+=======
  
- ****Still in progress ****
+
  
  
  
@@ -12,6 +20,7 @@
 ![image](https://user-images.githubusercontent.com/98127121/182914748-76b7a820-e0cd-4567-84b1-de049409947f.png)
 ![image](https://user-images.githubusercontent.com/98127121/184676172-79ad9a49-973b-4b3a-8722-22b5022ef256.png)
 ![image](https://user-images.githubusercontent.com/98127121/184676219-317ac4c2-48cc-4d8a-a48d-eebc1f1711bd.png)
+
 
 
 
